@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/Interp4Command.hh
+iostream
+-
+MobileObj.hh
+../inc/MobileObj.hh
+
+../inc/MobileObj.hh
+string
+-
+Vector3D.hh
+../inc/Vector3D.hh
+
+../inc/Vector3D.hh
+geomVector.hh
+../inc/geomVector.hh
+
+../inc/geomVector.hh
+iostream
+-
+cmath
+-
+cassert
+-
+
+../plugin/inc/Interp4Set.hh
+Interp4Command.hh
+../plugin/inc/Interp4Command.hh
+
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/plugin/src/Interp4Set.cpp
+iostream
+-
+Interp4Set.hh
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/plugin/src/Interp4Set.hh
+MobileObj.hh
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/plugin/src/MobileObj.hh
+

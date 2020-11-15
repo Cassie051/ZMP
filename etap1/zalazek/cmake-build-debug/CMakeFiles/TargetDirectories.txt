@@ -1,0 +1,9 @@
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/CMakeFiles/interpreter.dir
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/plugin/CMakeFiles/Interp4Set.dir
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/plugin/CMakeFiles/rebuild_cache.dir
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/plugin/CMakeFiles/Interp4Pause.dir
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/plugin/CMakeFiles/edit_cache.dir
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/plugin/CMakeFiles/Interp4Move.dir
+/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/plugin/CMakeFiles/Interp4Rotate.dir

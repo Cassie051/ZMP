@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/interpreter.dir/src/main.cpp.o  -o interpreter  -Wl,-rpath,/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/plugin -ldl plugin/libInterp4Move.so plugin/libInterp4Set.so plugin/libInterp4Pause.so 
