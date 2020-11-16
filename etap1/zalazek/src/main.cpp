@@ -53,19 +53,19 @@ int main(int argc, char **argv)
 
   while(IStrm4Cmds.eof())
   {
-     std::string libName, objectName;
+    std::string libName, objectName;
 
     IStrm4Cmds >> libName;
     IStrm4Cmds >> objectName;
      
-     auto mobileObject = scene.findMobileObject(objectName);
+     std::shared_ptr<MobileObj> mobileObject = scene.findMobileObject(objectName);
      if(!mobileObject)
      {
        scene.addMobileObject(objectName);
      }
      mobileObject = scene.findMobileObject(objectName);
      
-     auto interface = libInerfaces.findInterface(libName);
+     std::shared_ptr<LibInterface> interface = libInerfaces.findInterface(libName);
      if(!interface)
      {
        bool addedLibSuccesfully = libInerfaces.addInterface(libName);

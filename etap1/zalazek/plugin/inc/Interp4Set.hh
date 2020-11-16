@@ -24,8 +24,8 @@ class Interp4Set: public Interp4Command {
    *  do przechowywania wartości parametrów danego polecenia.
    *  Ponieżej zdefiniowane jest tylko jedno pole jako przykład.
    */
-  double _X_Coordinate = 0;
-  double _Y_Coordinate = 0;
+  double X_Coordinate = 0;
+  double Y_Coordinate = 0;
   double _OZ_Angle = 0; 
   
  public:

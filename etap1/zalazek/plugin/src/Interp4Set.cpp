@@ -40,7 +40,7 @@ void Interp4Set::PrintCmd() const
   /*
    *  Tu trzeba napisać odpowiednio zmodyfikować kod poniżej.
    */
-  cout << GetCmdName() << " " << _X_Coordinate << " " <<  _Y_Coordinate << " " << _OZ_Angle << endl;
+  cout << GetCmdName() << " " << X_Coordinate << " " <<  Y_Coordinate << " " << _OZ_Angle << endl;
 }
 
 
@@ -70,7 +70,7 @@ bool Interp4Set::ExecCmd( MobileObj  *pMobObj,  int  Socket) const
  */
 bool Interp4Set::ReadParams(std::istream& Strm_CmdsList)
 {
-  Strm_CmdsList >> _X_Coordinate >> _Y_Coordinate >> _OZ_Angle;
+  Strm_CmdsList >> X_Coordinate >> Y_Coordinate >> _OZ_Angle;
   return !Strm_CmdsList.fail();
 }
 
