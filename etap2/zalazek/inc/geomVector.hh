@@ -1,3 +1,4 @@
+#pragma once
 #ifndef GEOMVECTOR_HH
 #define GEOMVECTOR_HH
 

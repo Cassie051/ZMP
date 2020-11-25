@@ -6,5 +6,5 @@ CXX_FLAGS = -g -fPIC   -std=gnu++17
 
 CXX_DEFINES = -DInterp4Pause_EXPORTS
 
-CXX_INCLUDES = -I/home/kasia/Dokumenty/ZMP/etap1/zalazek/plugin/inc -I/home/kasia/Dokumenty/ZMP/etap1/zalazek/plugin/src -I/home/kasia/Dokumenty/ZMP/etap1/zalazek/plugin/../inc 
+CXX_INCLUDES = -I/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc -I/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src -I/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc 
 

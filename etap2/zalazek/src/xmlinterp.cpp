@@ -1,11 +1,11 @@
 #include <xercesc/util/PlatformUtils.hpp>
 #include "xmlinterp.hh"
-#include <cassert>
 #include <sstream>
 #include <cstdlib>
 #include <iostream>
-
-
+#include "MobileObj.hh"
+#include "Set4LibInterfaces.hh"
+#include "Scene.hh"
 
 using namespace std;
 
@@ -14,8 +14,9 @@ using namespace std;
  * Konstruktor klasy. Tutaj należy zainicjalizować wszystkie
  * dodatkowe pola.
  */
-XMLInterp4Config::XMLInterp4Config(Configuration &rConfig)
+XMLInterp4Config::XMLInterp4Config()
 {
+
 }
 
 
@@ -40,13 +41,11 @@ void XMLInterp4Config::endDocument()
 
 
 
-
-
 /*!
  * Analizuje atrybuty elementu XML \p "Lib" i odpowiednio je interpretuje.
  * \param[in] Attrs - (\b in) atrybuty elementu XML \p "Lib".
  */
-void XMLInterp4Config::ProcessLibAttrs(const xercesc::Attributes  &Attrs)
+int XMLInterp4Config::ProcessLibAttrs(const xercesc::Attributes  &Attrs)
 {
  if (Attrs.getLength() != 1) {
       cerr << "Zla ilosc atrybutow dla \"Lib\"" << endl;
@@ -65,10 +64,22 @@ void XMLInterp4Config::ProcessLibAttrs(const xercesc::Attributes  &Attrs)
 
  cout << "  Nazwa biblioteki: " << sLibName << endl;
 
- // Tu trzeba wpisać własny kod ...
+    std::shared_ptr<LibInterface> interface = libInerfaces.findInterface(sLibName);
+    if(!interface)
+    {
+        bool addedLibSuccesfully = libInerfaces.addInterface(sLibName);
+        if(!addedLibSuccesfully)
+        {
+            std::cerr << "Couldnt init lib: "  << sLibName << "\n";
+            return 2;
+        }
+        interface = libInerfaces.findInterface(sLibName);
+    }
+
 
  xercesc::XMLString::release(&sParamName);
  xercesc::XMLString::release(&sLibName);
+ return 0;
 }
 
 
@@ -122,7 +133,13 @@ void XMLInterp4Config::ProcessCubeAttrs(const xercesc::Attributes  &Attrs)
      cout << "     " << x << "  " << y << "  " << z << endl;
  }
 
- // Tu trzeba wstawić odpowiednio własny kod ...
+    std::shared_ptr<MobileObj> mobileObject = scene.findMobileObject(sName_Name);
+    if(!mobileObject)
+    {
+        scene.addMobileObject(sName_Name);
+    }
+
+    mobileObject = scene.findMobileObject(sName_Name);
 
  xercesc::XMLString::release(&sName_Name);
  xercesc::XMLString::release(&sName_SizeXYZ);

@@ -1,3 +1,4 @@
+#pragma once
 #ifndef  INTERP4COMMAND_HH
 #define  INTERP4COMMAND_HH
 

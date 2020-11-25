@@ -4,9 +4,11 @@
 CMakeFiles/interpreter.dir/src/main.cpp.o: ../inc/Interp4Command.hh
 CMakeFiles/interpreter.dir/src/main.cpp.o: ../inc/LibInterface.hh
 CMakeFiles/interpreter.dir/src/main.cpp.o: ../inc/MobileObj.hh
+CMakeFiles/interpreter.dir/src/main.cpp.o: ../inc/ReadInter.hh
 CMakeFiles/interpreter.dir/src/main.cpp.o: ../inc/Scene.hh
-CMakeFiles/interpreter.dir/src/main.cpp.o: ../inc/Set4LibInterfaces.hpp
+CMakeFiles/interpreter.dir/src/main.cpp.o: ../inc/Set4LibInterfaces.hh
 CMakeFiles/interpreter.dir/src/main.cpp.o: ../inc/Vector3D.hh
 CMakeFiles/interpreter.dir/src/main.cpp.o: ../inc/geomVector.hh
+CMakeFiles/interpreter.dir/src/main.cpp.o: ../inc/xmlinterp.hh
 CMakeFiles/interpreter.dir/src/main.cpp.o: ../src/main.cpp
 

@@ -68,10 +68,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kasia/Dokumenty/ZMP/etap1/zalazek
+CMAKE_SOURCE_DIR = /home/kasia/Dokumenty/ZMP/etap2/zalazek
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/CMakeFiles /home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,19 @@ interpreter: cmake_check_build_system
 interpreter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/build
 .PHONY : interpreter/fast
+
+#=============================================================================
+# Target rules for targets named interpreter-lib
+
+# Build rule for target.
+interpreter-lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 interpreter-lib
+.PHONY : interpreter-lib
+
+# fast build rule for target.
+interpreter-lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/build
+.PHONY : interpreter-lib/fast
 
 #=============================================================================
 # Target rules for targets named Interp4Set
@@ -195,6 +208,114 @@ Interp4Rotate/fast:
 	$(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Rotate.dir/build.make plugin/CMakeFiles/Interp4Rotate.dir/build
 .PHONY : Interp4Rotate/fast
 
+src/Init.o: src/Init.cpp.o
+
+.PHONY : src/Init.o
+
+# target to build an object file
+src/Init.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Init.cpp.o
+.PHONY : src/Init.cpp.o
+
+src/Init.i: src/Init.cpp.i
+
+.PHONY : src/Init.i
+
+# target to preprocess a source file
+src/Init.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Init.cpp.i
+.PHONY : src/Init.cpp.i
+
+src/Init.s: src/Init.cpp.s
+
+.PHONY : src/Init.s
+
+# target to generate assembly for a file
+src/Init.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Init.cpp.s
+.PHONY : src/Init.cpp.s
+
+src/LibInterface.o: src/LibInterface.cpp.o
+
+.PHONY : src/LibInterface.o
+
+# target to build an object file
+src/LibInterface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/LibInterface.cpp.o
+.PHONY : src/LibInterface.cpp.o
+
+src/LibInterface.i: src/LibInterface.cpp.i
+
+.PHONY : src/LibInterface.i
+
+# target to preprocess a source file
+src/LibInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/LibInterface.cpp.i
+.PHONY : src/LibInterface.cpp.i
+
+src/LibInterface.s: src/LibInterface.cpp.s
+
+.PHONY : src/LibInterface.s
+
+# target to generate assembly for a file
+src/LibInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/LibInterface.cpp.s
+.PHONY : src/LibInterface.cpp.s
+
+src/Scene.o: src/Scene.cpp.o
+
+.PHONY : src/Scene.o
+
+# target to build an object file
+src/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Scene.cpp.o
+.PHONY : src/Scene.cpp.o
+
+src/Scene.i: src/Scene.cpp.i
+
+.PHONY : src/Scene.i
+
+# target to preprocess a source file
+src/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Scene.cpp.i
+.PHONY : src/Scene.cpp.i
+
+src/Scene.s: src/Scene.cpp.s
+
+.PHONY : src/Scene.s
+
+# target to generate assembly for a file
+src/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Scene.cpp.s
+.PHONY : src/Scene.cpp.s
+
+src/Set4LibInterfaces.o: src/Set4LibInterfaces.cpp.o
+
+.PHONY : src/Set4LibInterfaces.o
+
+# target to build an object file
+src/Set4LibInterfaces.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Set4LibInterfaces.cpp.o
+.PHONY : src/Set4LibInterfaces.cpp.o
+
+src/Set4LibInterfaces.i: src/Set4LibInterfaces.cpp.i
+
+.PHONY : src/Set4LibInterfaces.i
+
+# target to preprocess a source file
+src/Set4LibInterfaces.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Set4LibInterfaces.cpp.i
+.PHONY : src/Set4LibInterfaces.cpp.i
+
+src/Set4LibInterfaces.s: src/Set4LibInterfaces.cpp.s
+
+.PHONY : src/Set4LibInterfaces.s
+
+# target to generate assembly for a file
+src/Set4LibInterfaces.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Set4LibInterfaces.cpp.s
+.PHONY : src/Set4LibInterfaces.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -202,6 +323,7 @@ src/main.o: src/main.cpp.o
 # target to build an object file
 src/main.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -211,6 +333,7 @@ src/main.i: src/main.cpp.i
 # target to preprocess a source file
 src/main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -220,7 +343,35 @@ src/main.s: src/main.cpp.s
 # target to generate assembly for a file
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter.dir/build.make CMakeFiles/interpreter.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/xmlinterp.o: src/xmlinterp.cpp.o
+
+.PHONY : src/xmlinterp.o
+
+# target to build an object file
+src/xmlinterp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/xmlinterp.cpp.o
+.PHONY : src/xmlinterp.cpp.o
+
+src/xmlinterp.i: src/xmlinterp.cpp.i
+
+.PHONY : src/xmlinterp.i
+
+# target to preprocess a source file
+src/xmlinterp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/xmlinterp.cpp.i
+.PHONY : src/xmlinterp.cpp.i
+
+src/xmlinterp.s: src/xmlinterp.cpp.s
+
+.PHONY : src/xmlinterp.s
+
+# target to generate assembly for a file
+src/xmlinterp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/xmlinterp.cpp.s
+.PHONY : src/xmlinterp.cpp.s
 
 # Help Target
 help:
@@ -235,9 +386,25 @@ help:
 	@echo "... Interp4Rotate"
 	@echo "... Interp4Set"
 	@echo "... interpreter"
+	@echo "... interpreter-lib"
+	@echo "... src/Init.o"
+	@echo "... src/Init.i"
+	@echo "... src/Init.s"
+	@echo "... src/LibInterface.o"
+	@echo "... src/LibInterface.i"
+	@echo "... src/LibInterface.s"
+	@echo "... src/Scene.o"
+	@echo "... src/Scene.i"
+	@echo "... src/Scene.s"
+	@echo "... src/Set4LibInterfaces.o"
+	@echo "... src/Set4LibInterfaces.i"
+	@echo "... src/Set4LibInterfaces.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/xmlinterp.o"
+	@echo "... src/xmlinterp.i"
+	@echo "... src/xmlinterp.s"
 .PHONY : help
 
 

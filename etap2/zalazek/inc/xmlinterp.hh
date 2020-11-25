@@ -1,3 +1,4 @@
+#pragma once
 #ifndef XMLINTERP4ACTIONS_HH
 #define XMLINTERP4ACTIONS_HH
 
@@ -6,13 +7,12 @@
 //#include <xercesc/sax2/XMLReaderFactory.hpp>
 #include <xercesc/util/PlatformUtils.hpp>
 #include <xercesc/sax/Locator.hpp>
-
 #include <xercesc/sax2/Attributes.hpp>
 #include <xercesc/sax2/DefaultHandler.hpp>
+#include "Set4LibInterfaces.hh"
+#include "Scene.hh"
 
 //XERCES_CPP_NAMESPACE_USE
-
-#include "Configuration.hh"
 
 
 /*!
@@ -21,12 +21,13 @@
  * Klasa zawiera zestaw metod, które wywoływane są w trakcie czytania i analizy
  * pliku XML.
  */
-class XMLInterp4Config : public xercesc::DefaultHandler {
+class XMLInterp4Config : xercesc::DefaultHandler {
   public:
    /*!
     * \brief Inicjalizuje obiekt i kojarzy go z listą poleceń robota
     */
-  XMLInterp4Config(Configuration &rConfig);
+  XMLInterp4Config();
+
 
    /*!
     * \brief Wywoływana jest na początku dokumentu
@@ -78,12 +79,14 @@ class XMLInterp4Config : public xercesc::DefaultHandler {
     /*!
      * \brief Analizuje atrybuty i  odpwiednio je interpretuje
      */
-    void ProcessLibAttrs(const xercesc::Attributes&   Attrs);
+    int ProcessLibAttrs(const xercesc::Attributes&   Attrs);
     /*!
      * \brief Analizuje atrybuty i odpwiednio je interpretuje
      */
     void ProcessCubeAttrs(const xercesc::Attributes&   Attrs); 
-  private:
+  protected:
+    Set4LibInterfaces libInerfaces;
+    Scene scene;
 };
 
 #endif

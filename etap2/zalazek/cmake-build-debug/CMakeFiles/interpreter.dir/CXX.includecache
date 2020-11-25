@@ -13,6 +13,8 @@ MobileObj.hh
 ../inc/MobileObj.hh
 
 ../inc/LibInterface.hh
+memory
+-
 string
 -
 Interp4Command.hh
@@ -26,6 +28,20 @@ string
 Vector3D.hh
 ../inc/Vector3D.hh
 
+../inc/ReadInter.hh
+iostream
+-
+xercesc/sax2/SAX2XMLReader.hpp
+-
+xercesc/sax2/XMLReaderFactory.hpp
+-
+xercesc/sax2/DefaultHandler.hpp
+-
+xercesc/util/XMLString.hpp
+-
+xmlinterp.hh
+../inc/xmlinterp.hh
+
 ../inc/Scene.hh
 MobileObj.hh
 ../inc/MobileObj.hh
@@ -34,7 +50,7 @@ map
 memory
 -
 
-../inc/Set4LibInterfaces.hpp
+../inc/Set4LibInterfaces.hh
 map
 -
 string
@@ -56,23 +72,35 @@ cmath
 cassert
 -
 
-/home/kasia/Dokumenty/ZMP/etap1/zalazek/src/main.cpp
+../inc/xmlinterp.hh
+string
+-
+xercesc/util/XMLString.hpp
+-
+xercesc/util/PlatformUtils.hpp
+-
+xercesc/sax/Locator.hpp
+-
+xercesc/sax2/Attributes.hpp
+-
+xercesc/sax2/DefaultHandler.hpp
+-
+Set4LibInterfaces.hh
+../inc/Set4LibInterfaces.hh
+Scene.hh
+../inc/Scene.hh
+
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/main.cpp
 iostream
--
-dlfcn.h
--
-cassert
 -
 string
 -
 sstream
 -
-fstream
+xmlinterp.hh
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/xmlinterp.hh
+ReadInter.hh
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/ReadInter.hh
+filesystem
 -
-MobileObj.hh
-/home/kasia/Dokumenty/ZMP/etap1/zalazek/src/MobileObj.hh
-Set4LibInterfaces.hpp
-/home/kasia/Dokumenty/ZMP/etap1/zalazek/src/Set4LibInterfaces.hpp
-Scene.hh
-/home/kasia/Dokumenty/ZMP/etap1/zalazek/src/Scene.hh
 

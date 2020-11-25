@@ -1,3 +1,4 @@
+#pragma once
 #ifndef MOBILEOBJ_HH
 #define MOBILEOBJ_HH
 

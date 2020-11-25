@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kasia/Dokumenty/ZMP/etap1/zalazek/plugin/src/Interp4Rotate.cpp" "/home/kasia/Dokumenty/ZMP/etap1/zalazek/cmake-build-debug/plugin/CMakeFiles/Interp4Rotate.dir/src/Interp4Rotate.cpp.o"
+  "/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Rotate.cpp" "/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/CMakeFiles/Interp4Rotate.dir/src/Interp4Rotate.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
