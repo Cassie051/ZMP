@@ -133,14 +133,17 @@ void XMLInterp4Config::ProcessCubeAttrs(const xercesc::Attributes  &Attrs)
      cout << "     " << x << "  " << y << "  " << z << endl;
  }
 
-    std::shared_ptr<MobileObj> mobileObject = scene.findMobileObject(sName_Name);
+
+    std::shared_ptr<MobileObj> mobileObject = scene.findMobileObject(sValue_Name);
     if(!mobileObject)
     {
-        scene.addMobileObject(sName_Name);
+        scene.addMobileObject(sValue_Name);
+        scene.addObjectSize(sValue_Name, sValue_SizeXYZ);
+        scene.addObjectColor(sValue_Name, sValue_RGB);
     }
 
-    mobileObject = scene.findMobileObject(sName_Name);
-
+    mobileObject = scene.findMobileObject(sValue_Name);
+    scene.GetObjs();
  xercesc::XMLString::release(&sName_Name);
  xercesc::XMLString::release(&sName_SizeXYZ);
  xercesc::XMLString::release(&sName_RGB);
@@ -300,3 +303,9 @@ void XMLInterp4Config::warning(const xercesc::SAXParseException&  Exception)
    * jest tylko "atrapą".
    */
 }
+
+Scene* XMLInterp4Config::GetScene()
+{
+    return &scene;
+}
+

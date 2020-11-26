@@ -289,6 +289,33 @@ src/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Scene.cpp.s
 .PHONY : src/Scene.cpp.s
 
+src/Sender.o: src/Sender.cpp.o
+
+.PHONY : src/Sender.o
+
+# target to build an object file
+src/Sender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Sender.cpp.o
+.PHONY : src/Sender.cpp.o
+
+src/Sender.i: src/Sender.cpp.i
+
+.PHONY : src/Sender.i
+
+# target to preprocess a source file
+src/Sender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Sender.cpp.i
+.PHONY : src/Sender.cpp.i
+
+src/Sender.s: src/Sender.cpp.s
+
+.PHONY : src/Sender.s
+
+# target to generate assembly for a file
+src/Sender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Sender.cpp.s
+.PHONY : src/Sender.cpp.s
+
 src/Set4LibInterfaces.o: src/Set4LibInterfaces.cpp.o
 
 .PHONY : src/Set4LibInterfaces.o
@@ -315,6 +342,33 @@ src/Set4LibInterfaces.s: src/Set4LibInterfaces.cpp.s
 src/Set4LibInterfaces.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Set4LibInterfaces.cpp.s
 .PHONY : src/Set4LibInterfaces.cpp.s
+
+src/klient.o: src/klient.cpp.o
+
+.PHONY : src/klient.o
+
+# target to build an object file
+src/klient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/klient.cpp.o
+.PHONY : src/klient.cpp.o
+
+src/klient.i: src/klient.cpp.i
+
+.PHONY : src/klient.i
+
+# target to preprocess a source file
+src/klient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/klient.cpp.i
+.PHONY : src/klient.cpp.i
+
+src/klient.s: src/klient.cpp.s
+
+.PHONY : src/klient.s
+
+# target to generate assembly for a file
+src/klient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/klient.cpp.s
+.PHONY : src/klient.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -396,9 +450,15 @@ help:
 	@echo "... src/Scene.o"
 	@echo "... src/Scene.i"
 	@echo "... src/Scene.s"
+	@echo "... src/Sender.o"
+	@echo "... src/Sender.i"
+	@echo "... src/Sender.s"
 	@echo "... src/Set4LibInterfaces.o"
 	@echo "... src/Set4LibInterfaces.i"
 	@echo "... src/Set4LibInterfaces.s"
+	@echo "... src/klient.o"
+	@echo "... src/klient.i"
+	@echo "... src/klient.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

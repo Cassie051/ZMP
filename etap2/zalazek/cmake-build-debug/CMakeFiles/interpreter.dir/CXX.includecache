@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../inc/AccessControl.hh
+mutex
+-
+
 ../inc/Interp4Command.hh
 iostream
 -
@@ -28,6 +32,8 @@ string
 Vector3D.hh
 ../inc/Vector3D.hh
 
+../inc/Port.hh
+
 ../inc/ReadInter.hh
 iostream
 -
@@ -45,9 +51,23 @@ xmlinterp.hh
 ../inc/Scene.hh
 MobileObj.hh
 ../inc/MobileObj.hh
+AccessControl.hh
+../inc/AccessControl.hh
 map
 -
 memory
+-
+sstream
+-
+vector
+-
+
+../inc/Sender.h
+Scene.hh
+../inc/Scene.hh
+unistd.h
+-
+cstring
 -
 
 ../inc/Set4LibInterfaces.hh
@@ -72,6 +92,38 @@ cmath
 cassert
 -
 
+../inc/klient.h
+iostream
+-
+iomanip
+-
+cstring
+-
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+thread
+-
+mutex
+-
+vector
+-
+AccessControl.hh
+../inc/AccessControl.hh
+Port.hh
+../inc/Port.hh
+Sender.h
+../inc/Sender.h
+MobileObj.hh
+../inc/MobileObj.hh
+
 ../inc/xmlinterp.hh
 string
 -
@@ -95,12 +147,12 @@ iostream
 -
 string
 -
-sstream
--
-xmlinterp.hh
-/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/xmlinterp.hh
 ReadInter.hh
 /home/kasia/Dokumenty/ZMP/etap2/zalazek/src/ReadInter.hh
 filesystem
 -
+Sender.h
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/Sender.h
+klient.h
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/klient.h
 

@@ -66,8 +66,12 @@
         * musi to być nazwa unikalna wśród wszystkich obiektów na scenie.
         */
        std::string  _Name;
+       int RGB[2];
+       double SizeXYZ[2];
+       std::string _Cmd4StatDesc;
 
      public:
+        MobileObj() {SetCmds();}
       /*!
        * \brief Udostępia wartość kąta \e roll.
        *
@@ -149,6 +153,25 @@
 	* Udostępnia nazwę obiektu w trybie tylko do odczytu.
         */
        const std::string & GetName() const { return _Name; }
+
+       void SetColor(int R, int G, int B) { RGB[0] = R; RGB[1] = G; RGB[2] = B;}
+
+       void SetSize(double x, double y, double z) { SizeXYZ[0] = x; SizeXYZ[1] = y; SizeXYZ[2] = z;}
+
+       std::string GetSize() {return std::to_string(SizeXYZ[0])+" "+std::to_string(SizeXYZ[1])+" "+std::to_string(SizeXYZ[2]);}
+
+       std::string GetColor() {return std::to_string(RGB[0])+" "+std::to_string(RGB[1])+" "+std::to_string(RGB[2]);}
+
+       bool IncStateIndex() {return true;}
+
+       void SetCmds()
+       {
+           std::string AngRoll = std::to_string(_Ang_Roll_deg);
+           std::string AngPitch = std::to_string(_Ang_Pitch_deg);
+           std::string AngYaw = std::to_string(_Ang_Yaw_deg);
+           std::string strposs = std::to_string(_Position_m[0])+" "+std::to_string(_Position_m[1])+" "+std::to_string(_Position_m[2]);
+           _Cmd4StatDesc = "Cube  " +GetSize() + "  " + strposs+ "  "+AngRoll+" "+AngPitch+" "+ AngYaw+"  "+GetColor()+"\n";
+       }
     };
 
 
