@@ -154,13 +154,27 @@
         */
        const std::string & GetName() const { return _Name; }
 
-       void SetColor(int R, int G, int B) { RGB[0] = R; RGB[1] = G; RGB[2] = B;}
+       void SetColor(int r, int g, int b)
+       {
+           RGB[0] = r;
+           RGB[1] = g;
+           RGB[2] = b;
+       }
 
-       void SetSize(double x, double y, double z) { SizeXYZ[0] = x; SizeXYZ[1] = y; SizeXYZ[2] = z;}
+       void SetSize(double x, double y, double z)
+       {
+           SizeXYZ[0] = x;
+           SizeXYZ[1] = y;
+           SizeXYZ[2] = z;
+       }
 
        std::string GetSize() {return std::to_string(SizeXYZ[0])+" "+std::to_string(SizeXYZ[1])+" "+std::to_string(SizeXYZ[2]);}
 
-       std::string GetColor() {return std::to_string(RGB[0])+" "+std::to_string(RGB[1])+" "+std::to_string(RGB[2]);}
+       std::string GetColor()
+       {
+           std::string toReturn = std::to_string(RGB[0])+" "+std::to_string(RGB[1])+" "+std::to_string(RGB[2]);
+           return toReturn;
+       }
 
        bool IncStateIndex() {return true;}
 
@@ -172,6 +186,15 @@
            std::string strposs = std::to_string(_Position_m[0])+" "+std::to_string(_Position_m[1])+" "+std::to_string(_Position_m[2]);
            _Cmd4StatDesc = "Cube  " +GetSize() + "  " + strposs+ "  "+AngRoll+" "+AngPitch+" "+ AngYaw+"  "+GetColor()+"\n";
        }
+        std::string GetCommand()
+        {
+            Vector3D poss = GetPositoin_m();
+            std::string AngRoll = std::to_string(GetAng_Roll_deg());
+            std::string AngPitch = std::to_string(GetAng_Pitch_deg());
+            std::string AngYaw = std::to_string(GetAng_Yaw_deg());
+            std::string strposs = std::to_string(poss[0])+" "+std::to_string(poss[1])+" "+std::to_string(poss[2]);
+            return "Cube  " + GetSize() + "  " + strposs+ "  "+AngRoll+" "+AngPitch+" "+ AngYaw+ GetColor()+"\n";
+        }
     };
 
 

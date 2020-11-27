@@ -142,17 +142,17 @@ Set4LibInterfaces.hh
 Scene.hh
 ../inc/Scene.hh
 
-/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/main.cpp
+/home/nick/Dokumenty/ZMP/etap2/zalazek/src/main.cpp
 iostream
 -
 string
 -
 ReadInter.hh
-/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/ReadInter.hh
+/home/nick/Dokumenty/ZMP/etap2/zalazek/src/ReadInter.hh
 filesystem
 -
 Sender.h
-/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/Sender.h
+/home/nick/Dokumenty/ZMP/etap2/zalazek/src/Sender.h
 klient.h
-/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/klient.h
+/home/nick/Dokumenty/ZMP/etap2/zalazek/src/klient.h
 

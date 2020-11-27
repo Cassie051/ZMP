@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc -I/home/kasia/Dokumenty/ZMP/etap2/zalazek/config -I/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc -I/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src -I/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc 
+CXX_INCLUDES = -I/home/nick/Dokumenty/ZMP/etap2/zalazek/inc -I/home/nick/Dokumenty/ZMP/etap2/zalazek/config -I/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc -I/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src -I/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc 
 

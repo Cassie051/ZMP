@@ -16,7 +16,6 @@ public:
     void addObjectColor(const std::string& objectName, std::string sValue_RGB);
     void addObjectSize(const std::string& objectName, std::string sValue_SizeXYZ);
     std::vector<std::shared_ptr<MobileObj>> GetObjs();
-    std::string GetObjCommand();
     Scene();
     ~Scene();
 };

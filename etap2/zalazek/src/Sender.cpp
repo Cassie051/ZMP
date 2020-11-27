@@ -32,12 +32,12 @@ Sender::Sender(int Socket, Scene *pScn): _Socket(Socket), _pScn(pScn) {}
 
             Send(_Socket,"Clear\n"); // To jest konieczne, aby usunąć wcześniejsze obiekty.
             std::cout << "Clear\n";
-//            for (const MobileObj &rObj : _pScn->_Container4Objects) {
-//                // Ta instrukcja to tylko uproszczony przykład
-//                std::cout << rObj.GetStateDesc();
-//                Send(_Socket,rObj.GetStateDesc()); // Tu musi zostać wywołanie odpowiedniej
-//                // metody/funkcji gerującej polecenia dla serwera.
-//            }
+            for (std::shared_ptr<MobileObj> rObj : _pScn->GetObjs()) {
+                // Ta instrukcja to tylko uproszczony przykład
+                std::cout << rObj->GetCommand();
+                Send(_Socket, rObj->GetCommand().c_str()); // Tu musi zostać wywołanie odpowiedniej
+                // metody/funkcji gerującej polecenia dla serwera.
+            }
             Send(_Socket,"Display\n"); // To jest konieczne, aby zobaczyć zmiany
             std::cout << "Display\n";
 
