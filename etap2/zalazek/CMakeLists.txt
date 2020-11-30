@@ -9,7 +9,7 @@ add_subdirectory(plugin)
 set (SRC_LIST
     src/xmlinterp.cpp
     src/main.cpp
-    src/Init.cpp src/LibInterface.cpp src/Set4LibInterfaces.cpp src/Scene.cpp)
+    src/Init.cpp src/LibInterface.cpp src/Set4LibInterfaces.cpp src/Scene.cpp src/klient.cpp inc/AccessControl.hh inc/Port.hh src/Sender.cpp inc/Sender.h inc/klient.h)
 
 include_directories(inc config)
 add_library(${PROJECT_NAME}-lib ${SRC_LIST})

@@ -15,7 +15,7 @@
  * \retval true - jeśli wczytanie zostało zrealizowane poprawnie,
  * \retval false - w przeciwnym przypadku.
  */
-bool ReadFile(const char* sFileName, const char* sGrammaryFileName)
+bool ReadFile(const char* sFileName, const char* sGrammaryFileName,xercesc::DefaultHandler* &Handler)
 {
    try {
             xercesc::XMLPlatformUtils::Initialize();
@@ -39,9 +39,8 @@ bool ReadFile(const char* sFileName, const char* sGrammaryFileName)
 
    pParser->setFeature(xercesc::XMLUni::fgXercesValidationErrorAsFatal, true);
 
-   xercesc::DefaultHandler* pHandler = (xercesc::DefaultHandler*)(new XMLInterp4Config());
-   pParser->setContentHandler(pHandler);
-   pParser->setErrorHandler(pHandler);
+    pParser->setContentHandler(Handler);
+    pParser->setErrorHandler(Handler);
 
    try {
      
@@ -83,7 +82,5 @@ bool ReadFile(const char* sFileName, const char* sGrammaryFileName)
             return false;
    }
 
-   delete pParser;
-//    delete pHandler;
    return true;
 }

@@ -83,7 +83,8 @@ class XMLInterp4Config : xercesc::DefaultHandler {
     /*!
      * \brief Analizuje atrybuty i odpwiednio je interpretuje
      */
-    void ProcessCubeAttrs(const xercesc::Attributes&   Attrs); 
+    void ProcessCubeAttrs(const xercesc::Attributes&   Attrs);
+    Scene* GetScene();
   protected:
     Set4LibInterfaces libInerfaces;
     Scene scene;

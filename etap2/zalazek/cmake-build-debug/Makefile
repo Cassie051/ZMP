@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/129/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/135/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/135/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kasia/Dokumenty/ZMP/etap2/zalazek
+CMAKE_SOURCE_DIR = /home/nick/Dokumenty/ZMP/etap2/zalazek
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/129/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/135/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/129/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/135/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -289,6 +289,33 @@ src/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Scene.cpp.s
 .PHONY : src/Scene.cpp.s
 
+src/Sender.o: src/Sender.cpp.o
+
+.PHONY : src/Sender.o
+
+# target to build an object file
+src/Sender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Sender.cpp.o
+.PHONY : src/Sender.cpp.o
+
+src/Sender.i: src/Sender.cpp.i
+
+.PHONY : src/Sender.i
+
+# target to preprocess a source file
+src/Sender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Sender.cpp.i
+.PHONY : src/Sender.cpp.i
+
+src/Sender.s: src/Sender.cpp.s
+
+.PHONY : src/Sender.s
+
+# target to generate assembly for a file
+src/Sender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Sender.cpp.s
+.PHONY : src/Sender.cpp.s
+
 src/Set4LibInterfaces.o: src/Set4LibInterfaces.cpp.o
 
 .PHONY : src/Set4LibInterfaces.o
@@ -315,6 +342,33 @@ src/Set4LibInterfaces.s: src/Set4LibInterfaces.cpp.s
 src/Set4LibInterfaces.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/Set4LibInterfaces.cpp.s
 .PHONY : src/Set4LibInterfaces.cpp.s
+
+src/klient.o: src/klient.cpp.o
+
+.PHONY : src/klient.o
+
+# target to build an object file
+src/klient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/klient.cpp.o
+.PHONY : src/klient.cpp.o
+
+src/klient.i: src/klient.cpp.i
+
+.PHONY : src/klient.i
+
+# target to preprocess a source file
+src/klient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/klient.cpp.i
+.PHONY : src/klient.cpp.i
+
+src/klient.s: src/klient.cpp.s
+
+.PHONY : src/klient.s
+
+# target to generate assembly for a file
+src/klient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/klient.cpp.s
+.PHONY : src/klient.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -396,9 +450,15 @@ help:
 	@echo "... src/Scene.o"
 	@echo "... src/Scene.i"
 	@echo "... src/Scene.s"
+	@echo "... src/Sender.o"
+	@echo "... src/Sender.i"
+	@echo "... src/Sender.s"
 	@echo "... src/Set4LibInterfaces.o"
 	@echo "... src/Set4LibInterfaces.i"
 	@echo "... src/Set4LibInterfaces.s"
+	@echo "... src/klient.o"
+	@echo "... src/klient.i"
+	@echo "... src/klient.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
