@@ -8,37 +8,37 @@
 		<Option virtualFolders="CMake Files\;CMake Files\plugin\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="interpreter">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/interpreter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/interpreter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/config"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/config"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -48,24 +48,24 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 interpreter"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 interpreter"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="interpreter/fast">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/interpreter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/interpreter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/config"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/config"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -75,31 +75,31 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 interpreter/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 interpreter/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="interpreter-lib">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/libinterpreter-lib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/libinterpreter-lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/config"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/config"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -109,21 +109,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 interpreter-lib"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 interpreter-lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="interpreter-lib/fast">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/libinterpreter-lib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/libinterpreter-lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/config"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/config"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -133,22 +133,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 interpreter-lib/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 interpreter-lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interp4Set">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Set.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Set.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -158,22 +158,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Set"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Set"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interp4Set/fast">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Set.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Set.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -183,22 +183,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Set/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Set/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interp4Pause">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Pause.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Pause.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -208,22 +208,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Pause"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Pause"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interp4Pause/fast">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Pause.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Pause.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -233,22 +233,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Pause/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Pause/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interp4Move">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Move.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Move.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -258,22 +258,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Move"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Move"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interp4Move/fast">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Move.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Move.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -283,22 +283,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Move/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Move/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interp4Rotate">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Rotate.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Rotate.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -308,22 +308,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Rotate"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Rotate"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interp4Rotate/fast">
-				<Option output="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Rotate.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
+				<Option output="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/libInterp4Rotate.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
-					<Add directory="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src"/>
+					<Add directory="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/../inc"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -333,78 +333,81 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Rotate/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 Interp4Rotate/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/inc/AccessControl.hh">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc/AccessControl.hh">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/inc/Port.hh">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc/Port.hh">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/inc/Sender.h">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc/Sender.h">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/inc/klient.h">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc/klient.h">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc/Interp4Move.hh">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc/Interp4Move.hh">
 			<Option target="Interp4Move"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc/Interp4Pause.hh">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc/Interp4Pause.hh">
 			<Option target="Interp4Pause"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc/Interp4Rotate.hh">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc/Interp4Rotate.hh">
 			<Option target="Interp4Rotate"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/inc/Interp4Set.hh">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc/Interp4Set.hh">
 			<Option target="Interp4Set"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Move.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Move.cpp">
 			<Option target="Interp4Move"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Pause.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Pause.cpp">
 			<Option target="Interp4Pause"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Rotate.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Rotate.cpp">
 			<Option target="Interp4Rotate"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Set.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Set.cpp">
 			<Option target="Interp4Set"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/src/Init.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/Init.cpp">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/src/LibInterface.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/LibInterface.cpp">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/src/Scene.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/MobileObj.cpp">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/src/Sender.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/Scene.cpp">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/src/Set4LibInterfaces.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/Sender.cpp">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/src/klient.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/Set4LibInterfaces.cpp">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/src/main.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/klient.cpp">
+			<Option target="interpreter-lib"/>
+		</Unit>
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/main.cpp">
 			<Option target="interpreter"/>
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/src/xmlinterp.cpp">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/xmlinterp.cpp">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/CMakeLists.txt">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/CMakeLists.txt">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\plugin\"/>
 		</Unit>
 	</Project>

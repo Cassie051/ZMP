@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "ReadInter.hh"
+#include "ReadInter.cpp"
 #include <filesystem>
 #include "Sender.h"
 #include "klient.h"

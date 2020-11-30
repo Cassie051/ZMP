@@ -34,11 +34,11 @@ cassert
 Interp4Command.hh
 ../plugin/inc/Interp4Command.hh
 
-/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Move.cpp
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Move.cpp
 iostream
 -
 Interp4Move.hh
-/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Move.hh
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Move.hh
 MobileObj.hh
-/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/MobileObj.hh
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/MobileObj.hh
 

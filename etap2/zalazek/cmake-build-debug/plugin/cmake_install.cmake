@@ -1,4 +1,4 @@
-# Install script for directory: /home/nick/Dokumenty/ZMP/etap2/zalazek/plugin
+# Install script for directory: /home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

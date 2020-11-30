@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Move.cpp" "/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/CMakeFiles/Interp4Move.dir/src/Interp4Move.cpp.o"
+  "/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Move.cpp" "/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/CMakeFiles/Interp4Move.dir/src/Interp4Move.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

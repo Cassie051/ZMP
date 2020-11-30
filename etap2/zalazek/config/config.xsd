@@ -5,6 +5,7 @@
  <xs:complexType name="Type4Cube">
     <xs:attribute name="Name" type="xs:string"/>
     <xs:attribute name="SizeXYZ" type="xs:string"/>
+     <xs:attribute name="Pose" type="xs:string"/>
     <xs:attribute name="RGB" type="xs:string"/>
  </xs:complexType>
 

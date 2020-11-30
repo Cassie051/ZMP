@@ -7,7 +7,6 @@ CMakeFiles/interpreter.dir/src/main.cpp.o
  ../inc/LibInterface.hh
  ../inc/MobileObj.hh
  ../inc/Port.hh
- ../inc/ReadInter.hh
  ../inc/Scene.hh
  ../inc/Sender.h
  ../inc/Set4LibInterfaces.hh
@@ -15,4 +14,5 @@ CMakeFiles/interpreter.dir/src/main.cpp.o
  ../inc/geomVector.hh
  ../inc/klient.h
  ../inc/xmlinterp.hh
- /home/nick/Dokumenty/ZMP/etap2/zalazek/src/main.cpp
+ /home/kasia/Dokumenty/ZMP/etap2/zalazek/src/ReadInter.cpp
+ /home/kasia/Dokumenty/ZMP/etap2/zalazek/src/main.cpp

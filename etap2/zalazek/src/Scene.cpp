@@ -66,6 +66,23 @@ void Scene::addObjectSize(const std::string& objectName, std::string sValue_Size
     }
 }
 
+void Scene::addObjectPose(const std::string& objectName, std::string sValue_Pose)
+{
+    std::istringstream PoseStrm;
+    PoseStrm.str(sValue_Pose);
+    Vector3D PoseVec;
+
+    PoseStrm >> PoseVec[0] >> PoseVec[1] >> PoseVec[2];
+    if(!PoseStrm.fail())
+    {
+        std::shared_ptr<MobileObj> mobileObj;
+        if(mobileObj = findMobileObject(objectName))
+        {
+            mobileObj->SetPosition_m(PoseVec);
+        }
+    }
+}
+
 std::vector<std::shared_ptr<MobileObj>> Scene::GetObjs()
 {
     class std::shared_ptr<MobileObj> mobileObject = std::make_shared<MobileObj>();

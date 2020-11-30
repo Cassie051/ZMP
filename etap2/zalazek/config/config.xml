@@ -5,9 +5,9 @@
       <Lib Name="libInter4Pause.so"/>
    </Plugins>
    <Objects>
-      <Cube Name="obj1" SizeXYZ="10 15 5"    RGB="0 0 255"/>
-      <Cube Name="obj2" SizeXYZ="8 11.5 5"   RGB="10 0 255"/>
-      <Cube Name="obj3" SizeXYZ="12 13.5 5"  RGB="10 200 255"/>
+      <Cube Name="obj1" SizeXYZ="8 10 5"  Pose="-10 -7 -3"  RGB="255 190 11"/>
+      <Cube Name="obj2" SizeXYZ="3 6 2" Pose="10 15 2"  RGB="255 0 110"/>
+      <Cube Name="obj3" SizeXYZ="7 7 7" Pose="5 -2 12" RGB="10 34 255"/>
    </Objects>
   </Config>
   

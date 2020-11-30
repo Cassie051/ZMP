@@ -68,10 +68,10 @@ RM = /snap/clion/135/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nick/Dokumenty/ZMP/etap2/zalazek
+CMAKE_SOURCE_DIR = /home/kasia/Dokumenty/ZMP/etap2/zalazek
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/CMakeFiles/progress.marks
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles 0
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/CMakeFiles/progress.marks
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/clean
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,22 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/preinstall
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/preinstall
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 plugin/CMakeFiles/Interp4Set.dir/rule:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/CMakeFiles/Interp4Set.dir/rule
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/CMakeFiles/Interp4Set.dir/rule
 .PHONY : plugin/CMakeFiles/Interp4Set.dir/rule
 
 # Convenience name for target.
@@ -142,12 +142,12 @@ Interp4Set: plugin/CMakeFiles/Interp4Set.dir/rule
 
 # fast build rule for target.
 Interp4Set/fast:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Set.dir/build.make plugin/CMakeFiles/Interp4Set.dir/build
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Set.dir/build.make plugin/CMakeFiles/Interp4Set.dir/build
 .PHONY : Interp4Set/fast
 
 # Convenience name for target.
 plugin/CMakeFiles/Interp4Pause.dir/rule:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/CMakeFiles/Interp4Pause.dir/rule
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/CMakeFiles/Interp4Pause.dir/rule
 .PHONY : plugin/CMakeFiles/Interp4Pause.dir/rule
 
 # Convenience name for target.
@@ -157,12 +157,12 @@ Interp4Pause: plugin/CMakeFiles/Interp4Pause.dir/rule
 
 # fast build rule for target.
 Interp4Pause/fast:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Pause.dir/build.make plugin/CMakeFiles/Interp4Pause.dir/build
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Pause.dir/build.make plugin/CMakeFiles/Interp4Pause.dir/build
 .PHONY : Interp4Pause/fast
 
 # Convenience name for target.
 plugin/CMakeFiles/Interp4Move.dir/rule:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/CMakeFiles/Interp4Move.dir/rule
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/CMakeFiles/Interp4Move.dir/rule
 .PHONY : plugin/CMakeFiles/Interp4Move.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ Interp4Move: plugin/CMakeFiles/Interp4Move.dir/rule
 
 # fast build rule for target.
 Interp4Move/fast:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Move.dir/build.make plugin/CMakeFiles/Interp4Move.dir/build
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Move.dir/build.make plugin/CMakeFiles/Interp4Move.dir/build
 .PHONY : Interp4Move/fast
 
 # Convenience name for target.
 plugin/CMakeFiles/Interp4Rotate.dir/rule:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/CMakeFiles/Interp4Rotate.dir/rule
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plugin/CMakeFiles/Interp4Rotate.dir/rule
 .PHONY : plugin/CMakeFiles/Interp4Rotate.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Interp4Rotate: plugin/CMakeFiles/Interp4Rotate.dir/rule
 
 # fast build rule for target.
 Interp4Rotate/fast:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Rotate.dir/build.make plugin/CMakeFiles/Interp4Rotate.dir/build
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Rotate.dir/build.make plugin/CMakeFiles/Interp4Rotate.dir/build
 .PHONY : Interp4Rotate/fast
 
 src/Interp4Move.o: src/Interp4Move.cpp.o
@@ -196,7 +196,7 @@ src/Interp4Move.o: src/Interp4Move.cpp.o
 
 # target to build an object file
 src/Interp4Move.cpp.o:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Move.dir/build.make plugin/CMakeFiles/Interp4Move.dir/src/Interp4Move.cpp.o
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Move.dir/build.make plugin/CMakeFiles/Interp4Move.dir/src/Interp4Move.cpp.o
 .PHONY : src/Interp4Move.cpp.o
 
 src/Interp4Move.i: src/Interp4Move.cpp.i
@@ -205,7 +205,7 @@ src/Interp4Move.i: src/Interp4Move.cpp.i
 
 # target to preprocess a source file
 src/Interp4Move.cpp.i:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Move.dir/build.make plugin/CMakeFiles/Interp4Move.dir/src/Interp4Move.cpp.i
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Move.dir/build.make plugin/CMakeFiles/Interp4Move.dir/src/Interp4Move.cpp.i
 .PHONY : src/Interp4Move.cpp.i
 
 src/Interp4Move.s: src/Interp4Move.cpp.s
@@ -214,7 +214,7 @@ src/Interp4Move.s: src/Interp4Move.cpp.s
 
 # target to generate assembly for a file
 src/Interp4Move.cpp.s:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Move.dir/build.make plugin/CMakeFiles/Interp4Move.dir/src/Interp4Move.cpp.s
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Move.dir/build.make plugin/CMakeFiles/Interp4Move.dir/src/Interp4Move.cpp.s
 .PHONY : src/Interp4Move.cpp.s
 
 src/Interp4Pause.o: src/Interp4Pause.cpp.o
@@ -223,7 +223,7 @@ src/Interp4Pause.o: src/Interp4Pause.cpp.o
 
 # target to build an object file
 src/Interp4Pause.cpp.o:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Pause.dir/build.make plugin/CMakeFiles/Interp4Pause.dir/src/Interp4Pause.cpp.o
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Pause.dir/build.make plugin/CMakeFiles/Interp4Pause.dir/src/Interp4Pause.cpp.o
 .PHONY : src/Interp4Pause.cpp.o
 
 src/Interp4Pause.i: src/Interp4Pause.cpp.i
@@ -232,7 +232,7 @@ src/Interp4Pause.i: src/Interp4Pause.cpp.i
 
 # target to preprocess a source file
 src/Interp4Pause.cpp.i:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Pause.dir/build.make plugin/CMakeFiles/Interp4Pause.dir/src/Interp4Pause.cpp.i
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Pause.dir/build.make plugin/CMakeFiles/Interp4Pause.dir/src/Interp4Pause.cpp.i
 .PHONY : src/Interp4Pause.cpp.i
 
 src/Interp4Pause.s: src/Interp4Pause.cpp.s
@@ -241,7 +241,7 @@ src/Interp4Pause.s: src/Interp4Pause.cpp.s
 
 # target to generate assembly for a file
 src/Interp4Pause.cpp.s:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Pause.dir/build.make plugin/CMakeFiles/Interp4Pause.dir/src/Interp4Pause.cpp.s
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Pause.dir/build.make plugin/CMakeFiles/Interp4Pause.dir/src/Interp4Pause.cpp.s
 .PHONY : src/Interp4Pause.cpp.s
 
 src/Interp4Rotate.o: src/Interp4Rotate.cpp.o
@@ -250,7 +250,7 @@ src/Interp4Rotate.o: src/Interp4Rotate.cpp.o
 
 # target to build an object file
 src/Interp4Rotate.cpp.o:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Rotate.dir/build.make plugin/CMakeFiles/Interp4Rotate.dir/src/Interp4Rotate.cpp.o
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Rotate.dir/build.make plugin/CMakeFiles/Interp4Rotate.dir/src/Interp4Rotate.cpp.o
 .PHONY : src/Interp4Rotate.cpp.o
 
 src/Interp4Rotate.i: src/Interp4Rotate.cpp.i
@@ -259,7 +259,7 @@ src/Interp4Rotate.i: src/Interp4Rotate.cpp.i
 
 # target to preprocess a source file
 src/Interp4Rotate.cpp.i:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Rotate.dir/build.make plugin/CMakeFiles/Interp4Rotate.dir/src/Interp4Rotate.cpp.i
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Rotate.dir/build.make plugin/CMakeFiles/Interp4Rotate.dir/src/Interp4Rotate.cpp.i
 .PHONY : src/Interp4Rotate.cpp.i
 
 src/Interp4Rotate.s: src/Interp4Rotate.cpp.s
@@ -268,7 +268,7 @@ src/Interp4Rotate.s: src/Interp4Rotate.cpp.s
 
 # target to generate assembly for a file
 src/Interp4Rotate.cpp.s:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Rotate.dir/build.make plugin/CMakeFiles/Interp4Rotate.dir/src/Interp4Rotate.cpp.s
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Rotate.dir/build.make plugin/CMakeFiles/Interp4Rotate.dir/src/Interp4Rotate.cpp.s
 .PHONY : src/Interp4Rotate.cpp.s
 
 src/Interp4Set.o: src/Interp4Set.cpp.o
@@ -277,7 +277,7 @@ src/Interp4Set.o: src/Interp4Set.cpp.o
 
 # target to build an object file
 src/Interp4Set.cpp.o:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Set.dir/build.make plugin/CMakeFiles/Interp4Set.dir/src/Interp4Set.cpp.o
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Set.dir/build.make plugin/CMakeFiles/Interp4Set.dir/src/Interp4Set.cpp.o
 .PHONY : src/Interp4Set.cpp.o
 
 src/Interp4Set.i: src/Interp4Set.cpp.i
@@ -286,7 +286,7 @@ src/Interp4Set.i: src/Interp4Set.cpp.i
 
 # target to preprocess a source file
 src/Interp4Set.cpp.i:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Set.dir/build.make plugin/CMakeFiles/Interp4Set.dir/src/Interp4Set.cpp.i
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Set.dir/build.make plugin/CMakeFiles/Interp4Set.dir/src/Interp4Set.cpp.i
 .PHONY : src/Interp4Set.cpp.i
 
 src/Interp4Set.s: src/Interp4Set.cpp.s
@@ -295,7 +295,7 @@ src/Interp4Set.s: src/Interp4Set.cpp.s
 
 # target to generate assembly for a file
 src/Interp4Set.cpp.s:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Set.dir/build.make plugin/CMakeFiles/Interp4Set.dir/src/Interp4Set.cpp.s
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(MAKE) $(MAKESILENT) -f plugin/CMakeFiles/Interp4Set.dir/build.make plugin/CMakeFiles/Interp4Set.dir/src/Interp4Set.cpp.s
 .PHONY : src/Interp4Set.cpp.s
 
 # Help Target
@@ -333,6 +333,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

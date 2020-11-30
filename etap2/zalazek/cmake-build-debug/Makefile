@@ -68,10 +68,10 @@ RM = /snap/clion/135/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nick/Dokumenty/ZMP/etap2/zalazek
+CMAKE_SOURCE_DIR = /home/kasia/Dokumenty/ZMP/etap2/zalazek
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -261,6 +261,33 @@ src/LibInterface.s: src/LibInterface.cpp.s
 src/LibInterface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/LibInterface.cpp.s
 .PHONY : src/LibInterface.cpp.s
+
+src/MobileObj.o: src/MobileObj.cpp.o
+
+.PHONY : src/MobileObj.o
+
+# target to build an object file
+src/MobileObj.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/MobileObj.cpp.o
+.PHONY : src/MobileObj.cpp.o
+
+src/MobileObj.i: src/MobileObj.cpp.i
+
+.PHONY : src/MobileObj.i
+
+# target to preprocess a source file
+src/MobileObj.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/MobileObj.cpp.i
+.PHONY : src/MobileObj.cpp.i
+
+src/MobileObj.s: src/MobileObj.cpp.s
+
+.PHONY : src/MobileObj.s
+
+# target to generate assembly for a file
+src/MobileObj.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interpreter-lib.dir/build.make CMakeFiles/interpreter-lib.dir/src/MobileObj.cpp.s
+.PHONY : src/MobileObj.cpp.s
 
 src/Scene.o: src/Scene.cpp.o
 
@@ -447,6 +474,9 @@ help:
 	@echo "... src/LibInterface.o"
 	@echo "... src/LibInterface.i"
 	@echo "... src/LibInterface.s"
+	@echo "... src/MobileObj.o"
+	@echo "... src/MobileObj.i"
+	@echo "... src/MobileObj.s"
 	@echo "... src/Scene.o"
 	@echo "... src/Scene.i"
 	@echo "... src/Scene.s"

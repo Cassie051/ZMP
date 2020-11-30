@@ -34,20 +34,6 @@ Vector3D.hh
 
 ../inc/Port.hh
 
-../inc/ReadInter.hh
-iostream
--
-xercesc/sax2/SAX2XMLReader.hpp
--
-xercesc/sax2/XMLReaderFactory.hpp
--
-xercesc/sax2/DefaultHandler.hpp
--
-xercesc/util/XMLString.hpp
--
-xmlinterp.hh
-../inc/xmlinterp.hh
-
 ../inc/Scene.hh
 MobileObj.hh
 ../inc/MobileObj.hh
@@ -61,6 +47,8 @@ sstream
 -
 vector
 -
+Vector3D.hh
+../inc/Vector3D.hh
 
 ../inc/Sender.h
 Scene.hh
@@ -142,17 +130,31 @@ Set4LibInterfaces.hh
 Scene.hh
 ../inc/Scene.hh
 
-/home/nick/Dokumenty/ZMP/etap2/zalazek/src/main.cpp
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/ReadInter.cpp
+iostream
+-
+xercesc/sax2/SAX2XMLReader.hpp
+-
+xercesc/sax2/XMLReaderFactory.hpp
+-
+xercesc/sax2/DefaultHandler.hpp
+-
+xercesc/util/XMLString.hpp
+-
+xmlinterp.hh
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/xmlinterp.hh
+
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/main.cpp
 iostream
 -
 string
 -
-ReadInter.hh
-/home/nick/Dokumenty/ZMP/etap2/zalazek/src/ReadInter.hh
+ReadInter.cpp
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/ReadInter.cpp
 filesystem
 -
 Sender.h
-/home/nick/Dokumenty/ZMP/etap2/zalazek/src/Sender.h
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/Sender.h
 klient.h
-/home/nick/Dokumenty/ZMP/etap2/zalazek/src/klient.h
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/klient.h
 

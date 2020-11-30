@@ -90,7 +90,7 @@ int XMLInterp4Config::ProcessLibAttrs(const xercesc::Attributes  &Attrs)
  */
 void XMLInterp4Config::ProcessCubeAttrs(const xercesc::Attributes  &Attrs)
 {
- if (Attrs.getLength() != 3) {
+ if (Attrs.getLength() != 4) {
       cerr << "Zla ilosc atrybutow dla \"Cube\"" << endl;
       exit(1);
  }
@@ -102,12 +102,14 @@ void XMLInterp4Config::ProcessCubeAttrs(const xercesc::Attributes  &Attrs)
 
  char* sName_Name = xercesc::XMLString::transcode(Attrs.getQName(0));
  char* sName_SizeXYZ = xercesc::XMLString::transcode(Attrs.getQName(1));
- char* sName_RGB = xercesc::XMLString::transcode(Attrs.getQName(2));
+ char* sName_Pose = xercesc::XMLString::transcode(Attrs.getQName(2));
+ char* sName_RGB = xercesc::XMLString::transcode(Attrs.getQName(3));
 
  XMLSize_t  Index = 0;
  char* sValue_Name    = xercesc::XMLString::transcode(Attrs.getValue(Index));
  char* sValue_SizeXYZ = xercesc::XMLString::transcode(Attrs.getValue(1));
- char* sValue_RGB     = xercesc::XMLString::transcode(Attrs.getValue(2));
+ char* sValue_Pose     = xercesc::XMLString::transcode(Attrs.getValue(2));
+ char* sValue_RGB     = xercesc::XMLString::transcode(Attrs.getValue(3));
 
 
  //------------------------------------------------
@@ -116,6 +118,7 @@ void XMLInterp4Config::ProcessCubeAttrs(const xercesc::Attributes  &Attrs)
  cout << " Atrybuty:" << endl
       << "     " << sName_Name << " = \"" << sValue_Name << "\"" << endl
       << "     " << sName_SizeXYZ << " = \"" << sValue_SizeXYZ << "\"" << endl
+      << "     " << sName_Pose << " = \"" << sValue_Pose << "\"" << endl
       << "     " << sName_RGB << " = \"" << sValue_RGB << "\"" << endl   
       << endl; 
  //------------------------------------------------
@@ -139,6 +142,7 @@ void XMLInterp4Config::ProcessCubeAttrs(const xercesc::Attributes  &Attrs)
     {
         scene.addMobileObject(sValue_Name);
         scene.addObjectSize(sValue_Name, sValue_SizeXYZ);
+        scene.addObjectPose(sValue_Name, sValue_Pose);
         scene.addObjectColor(sValue_Name, sValue_RGB);
     }
 
