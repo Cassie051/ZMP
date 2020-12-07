@@ -78,6 +78,8 @@
 
        void SetCmds();
 
+       void SetCmds(std::string cmd);
+
         std::string GetCommand();
     };
 

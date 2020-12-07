@@ -56,12 +56,36 @@ const char* Interp4Rotate::GetCmdName() const
 /*!
  *
  */
-bool Interp4Rotate::ExecCmd( MobileObj  *pMobObj,  int  Socket) const
+bool Interp4Rotate::ExecCmd( MobileObj  *pMobObj,  int  Socket, AccessControl * AccCtrlPtr) const
 {
   /*
    *  Tu trzeba napisać odpowiedni kod.
    */
-  return true;
+    int timeToSleep = (int)(1000000 / std::abs(_angularVelocity));
+    double targetOrientation  =pMobObj->GetAng_Yaw_deg() + _angularVelocity <0 ? -1 *_angle : _angle;
+    bool exist = true;
+    while(exist)
+    {
+        AccCtrlPtr->LockAccess();
+        Vector3D poss = pMobObj->GetPositoin_m();
+        double angleAfterIter = pMobObj->GetAng_Yaw_deg()+ _angularVelocity <0 ? -1 : 1;
+        std::string strposs =
+                std::to_string(poss[0]).substr(0, std::to_string(poss[0]).find(".") + 2)+" "+
+                std::to_string(poss[1]).substr(0, std::to_string(poss[1]).find(".") + 2)+" "+
+                std::to_string(poss[2]).substr(0, std::to_string(poss[2]).find(".") + 2);
+        std::string AngRoll = std::to_string(pMobObj->GetAng_Roll_deg()).substr(0, std::to_string(pMobObj->GetAng_Roll_deg()).find(".") + 2);
+        std::string AngPitch = std::to_string(pMobObj->GetAng_Pitch_deg()).substr(0, std::to_string(pMobObj->GetAng_Pitch_deg()).find(".") + 2);
+        std::string AngYaw = std::to_string(angleAfterIter).substr(0, std::to_string(angleAfterIter).find(".") + 2);
+
+
+        pMobObj -> SetCmds("Cube  " + pMobObj->GetSize() + "  " + strposs+ "  "+AngRoll+" "+AngPitch+" "+ AngYaw+ " "+ pMobObj->GetColor()+"\n");
+        pMobObj -> SetAng_Yaw_deg(angleAfterIter);
+        if (std::abs(targetOrientation - angleAfterIter) < 1.0)  exist = false;
+
+        AccCtrlPtr->MarkChange();
+        AccCtrlPtr->UnlockAccess();
+    }
+    return true;
 }
 
 
@@ -73,6 +97,8 @@ bool Interp4Rotate::ReadParams(std::istream& Strm_CmdsList)
   /*
    *  Tu trzeba napisać odpowiedni kod.
    */
+
+
   return true;
 }
 

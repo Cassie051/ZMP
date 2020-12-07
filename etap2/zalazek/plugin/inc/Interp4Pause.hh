@@ -7,6 +7,7 @@
 #endif
 
 #include "Interp4Command.hh"
+#include "AccessControl.hh"
 
 /*!
  * \file
@@ -48,7 +49,7 @@ class Interp4Pause: public Interp4Command {
   /*!
    * \brief Wykonuje polecenie oraz wizualizuje jego realizację
    */
-  virtual bool ExecCmd( MobileObj  *pMobObj, int Socket) const;
+  virtual bool ExecCmd( MobileObj  *pMobObj, int Socket, AccessControl * AccCtrlPtr) const;
   /*!
    * \brief Czyta wartości parametrów danego polecenia
    */

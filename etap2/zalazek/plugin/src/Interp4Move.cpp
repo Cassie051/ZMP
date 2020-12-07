@@ -57,7 +57,7 @@ const char* Interp4Move::GetCmdName() const
 /*!
  *
  */
-bool Interp4Move::ExecCmd( MobileObj  *pMobObj,  int  Socket) const
+bool Interp4Move::ExecCmd( MobileObj  *pMobObj,  int  Socket, AccessControl * AccCtrlPtr) const
 {
   /*
    *  Tu trzeba napisać odpowiedni kod.

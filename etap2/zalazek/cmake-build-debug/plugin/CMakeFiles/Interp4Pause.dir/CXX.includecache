@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
+../inc/AccessControl.hh
+mutex
+-
+
 ../inc/Interp4Command.hh
 iostream
 -
 MobileObj.hh
 ../inc/MobileObj.hh
+AccessControl.hh
+../inc/AccessControl.hh
 
 ../inc/MobileObj.hh
 string
@@ -33,12 +39,14 @@ cassert
 ../plugin/inc/Interp4Pause.hh
 Interp4Command.hh
 ../plugin/inc/Interp4Command.hh
+AccessControl.hh
+../plugin/inc/AccessControl.hh
 
-/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Pause.cpp
+/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Pause.cpp
 iostream
 -
 Interp4Pause.hh
-/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Pause.hh
+/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Pause.hh
 MobileObj.hh
-/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/MobileObj.hh
+/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/MobileObj.hh
 

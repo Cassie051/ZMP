@@ -8,12 +8,12 @@ LibInterface::LibInterface()
 
 bool LibInterface::initInterface(const std::string& CmdName)
 {
-    std::string libName("libInterp4");
-    libName.append(CmdName);
-    libName.append(".so");
-    std::string t = libName.c_str();
-    std::string path = "../lib/" + CmdName;
-    _pLibHnd = dlopen(CmdName.c_str(), RTLD_LAZY);
+//    std::string libName("libInterp4");
+//    libName.append(CmdName);
+//    libName.append(".o");
+//    std::string t = libName.c_str();
+//    std::string path = "../lib/" + CmdName;
+    _pLibHnd = dlopen(("./plugin/"+CmdName).c_str(), RTLD_LAZY);
     if(!_pLibHnd)
     {
         return false;
@@ -45,6 +45,7 @@ bool LibInterface::execActions(std::istream &rIstrm, std::shared_ptr<MobileObj>&
     delete pCmd;
     return true;
 }
+
 
 LibInterface::~LibInterface() {
     if (_pLibHnd) {
