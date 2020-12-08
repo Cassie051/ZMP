@@ -25,62 +25,96 @@ bool ExecPreprocesor( const char * NazwaPliku, std::istringstream &IStrm4Cmds )
     return pclose(pProc) == 0;
 }
 
-//
-//bool ReadCommands(int argc, char **argv)
-//{
-//    std::istringstream IStrm4Cmds;
-//
-//    if(!ExecPreprocesor(argv[1], IStrm4Cmds))
-//    {
-//        std::cerr << "Cannot process\n";
-//        return 2;
-//    }
-//
-//    Set4LibInterfaces libInerfaces;
-//    Scene scene;
-//    std::string libName, objectName;
-//
-//    IStrm4Cmds >> libName;
-//    IStrm4Cmds >> objectName;
-//
-//    while(!IStrm4Cmds.eof())
-//    {
-//        std::shared_ptr<MobileObj> mobileObject = scene.findMobileObject(objectName);
-//        if(!mobileObject)
-//        {
-//            scene.addMobileObject(objectName);
-//        }
-//        mobileObject = scene.findMobileObject(objectName);
-//
-//        std::shared_ptr<LibInterface> interface = libInerfaces.findInterface(libName);
-//        if(!interface)
-//        {
-//            bool addedLibSuccesfully = libInerfaces.addInterface(libName);
-//            if(!addedLibSuccesfully)
-//            {
-//                std::cerr << "Couldnt init lib: "  << libName << "\n";
-//                return 2;
-//            }
-//            interface = libInerfaces.findInterface(libName);
-//        }
-//        if(!interface->execActions(IStrm4Cmds, mobileObject))
-//        {
-//            std::cerr << "Couldnt execute action for: " << libName << "\n" ;
-//            return 2;
-//        }
-//
-//        IStrm4Cmds >> libName;
-//        IStrm4Cmds >> objectName;
-//    }
-//    return true;
-//}
-//
+
+bool ReadCommands(int argc, char **argv)
+{
+    std::istringstream IStrm4Cmds;
+
+    if(!ExecPreprocesor(argv[1], IStrm4Cmds))
+    {
+        std::cerr << "Cannot process\n";
+        return 2;
+    }
+
+    Set4LibInterfaces libInerfaces;
+    Scene scene;
+    std::string libName, objectName;
+
+    IStrm4Cmds >> libName;
+    IStrm4Cmds >> objectName;
+
+    if(libName == "Rotate")
+    {
+        libName = "libInterp4Rotate.so";
+    }
+    else if (libName == "Move")
+    {
+        libName = "libInterp4Move.so";
+    }
+    else if (libName == "Pause")
+    {
+        libName = "libInterp4Pause.so";
+    }
+    else if (libName == "Set")
+    {
+        libName = "libInterp4Set.so";
+    }
+
+    while(!IStrm4Cmds.eof())
+    {
+        std::shared_ptr<MobileObj> mobileObject = scene.findMobileObject(objectName);
+        if(!mobileObject)
+        {
+            scene.addMobileObject(objectName);
+        }
+        mobileObject = scene.findMobileObject(objectName);
+
+        std::shared_ptr<LibInterface> interface = libInerfaces.findInterface(libName);
+        if(!interface)
+        {
+            bool addedLibSuccesfully = libInerfaces.addInterface(libName);
+            if(!addedLibSuccesfully)
+            {
+                std::cerr << "Couldnt init lib: "  << libName << "\n";
+                return 2;
+            }
+            interface = libInerfaces.findInterface(libName);
+        }
+        if(!interface->execActions(IStrm4Cmds, mobileObject))
+        {
+            std::cerr << "Couldnt execute action for: " << libName << "\n" ;
+            return 2;
+        }
+
+        IStrm4Cmds >> libName;
+        IStrm4Cmds >> objectName;
+
+        if(libName == "Rotate")
+        {
+            libName = "libInterp4Rotate.so";
+        }
+        else if (libName == "Move")
+        {
+            libName = "libInterp4Move.so";
+        }
+        else if (libName == "Pause")
+        {
+            libName = "libInterp4Pause.so";
+        }
+        else if (libName == "Set")
+        {
+            libName = "libInterp4Set.so";
+        }
+    }
+    return true;
+}
+
 
 
 
 int main(int argc, char **argv)
 {
-  //  if(!ReadCommands(argc, argv)) return 1;
+    if(!ReadCommands(argc, argv)) return 1;
 
     std::cout << "Current path is " << std::filesystem::current_path() << '\n';
     xercesc::DefaultHandler* pHandler = (xercesc::DefaultHandler*)(new XMLInterp4Config());
