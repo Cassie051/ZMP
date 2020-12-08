@@ -2,8 +2,8 @@
 #include <string>
 #include "ReadInter.cpp"
 #include <filesystem>
-#include "Sender.h"
-#include "klient.h"
+#include "Sender.hh"
+#include "klient.hh"
 
 #define LINE_SIZE 500
 

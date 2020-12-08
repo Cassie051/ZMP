@@ -8,11 +8,11 @@ CMakeFiles/interpreter.dir/src/main.cpp.o
  ../inc/MobileObj.hh
  ../inc/Port.hh
  ../inc/Scene.hh
- ../inc/Sender.h
+ ../inc/Sender.hh
  ../inc/Set4LibInterfaces.hh
  ../inc/Vector3D.hh
  ../inc/geomVector.hh
- ../inc/klient.h
+ ../inc/klient.hh
  ../inc/xmlinterp.hh
  /home/kasia/Dokumenty/ZMP/etap2/zalazek/src/ReadInter.cpp
  /home/kasia/Dokumenty/ZMP/etap2/zalazek/src/main.cpp

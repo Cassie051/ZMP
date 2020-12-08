@@ -50,7 +50,7 @@ vector
 Vector3D.hh
 ../inc/Vector3D.hh
 
-../inc/Sender.h
+../inc/Sender.hh
 Scene.hh
 ../inc/Scene.hh
 unistd.h
@@ -80,7 +80,7 @@ cmath
 cassert
 -
 
-../inc/klient.h
+../inc/klient.hh
 iostream
 -
 iomanip
@@ -107,8 +107,8 @@ AccessControl.hh
 ../inc/AccessControl.hh
 Port.hh
 ../inc/Port.hh
-Sender.h
-../inc/Sender.h
+Sender.hh
+../inc/Sender.hh
 MobileObj.hh
 ../inc/MobileObj.hh
 
@@ -116,6 +116,10 @@ MobileObj.hh
 string
 -
 xercesc/util/XMLString.hpp
+-
+xercesc/sax2/SAX2XMLReader.hpp
+-
+xercesc/sax2/XMLReaderFactory.hpp
 -
 xercesc/util/PlatformUtils.hpp
 -
@@ -153,8 +157,8 @@ ReadInter.cpp
 /home/kasia/Dokumenty/ZMP/etap2/zalazek/src/ReadInter.cpp
 filesystem
 -
-Sender.h
-/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/Sender.h
-klient.h
-/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/klient.h
+Sender.hh
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/Sender.hh
+klient.hh
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/src/klient.hh
 

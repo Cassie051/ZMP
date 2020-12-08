@@ -346,10 +346,10 @@
 		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc/Port.hh">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc/Sender.h">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc/Sender.hh">
 			<Option target="interpreter-lib"/>
 		</Unit>
-		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc/klient.h">
+		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/inc/klient.hh">
 			<Option target="interpreter-lib"/>
 		</Unit>
 		<Unit filename="/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/inc/Interp4Move.hh">

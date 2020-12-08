@@ -4,13 +4,15 @@
 
 #include <string>
 #include <xercesc/util/XMLString.hpp>
-//#include <xercesc/sax2/XMLReaderFactory.hpp>
+#include <xercesc/sax2/SAX2XMLReader.hpp>
+#include <xercesc/sax2/XMLReaderFactory.hpp>
 #include <xercesc/util/PlatformUtils.hpp>
 #include <xercesc/sax/Locator.hpp>
 #include <xercesc/sax2/Attributes.hpp>
 #include <xercesc/sax2/DefaultHandler.hpp>
 #include "Set4LibInterfaces.hh"
 #include "Scene.hh"
+#include <thread>
 
 //XERCES_CPP_NAMESPACE_USE
 
@@ -23,9 +25,25 @@
  */
 class XMLInterp4Config : xercesc::DefaultHandler {
   public:
+
+    static void addObj(std::string const &name, std::string const &sizeXYZ, std::string const &pose, std::string const & rgb, Scene const & scene)
+    {
+        //std::shared_ptr<MobileObj> mobileObject = scene.findMobileObject(name);
+        //if(!mobileObject)
+        {
+        //    scene.addMobileObject(name);
+        //    scene.addObjectSize(name, sizeXYZ);
+        //    scene.addObjectPose(name, pose);
+        //    scene.addObjectColor(name, rgb);
+        }
+
+
+
+    }
    /*!
     * \brief Inicjalizuje obiekt i kojarzy go z listą poleceń robota
     */
+
   XMLInterp4Config();
 
 

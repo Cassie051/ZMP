@@ -103,8 +103,6 @@ void Fun_CmdsExecutor(SceneServer  *pScnServ)
 }
 
 
-
-
 int main( int argc, char * argv[] ) 
 {
   cout << "Port nasluchu: " << PORT << endl;

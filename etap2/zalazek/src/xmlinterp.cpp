@@ -136,25 +136,19 @@ void XMLInterp4Config::ProcessCubeAttrs(const xercesc::Attributes  &Attrs)
      cout << "     " << x << "  " << y << "  " << z << endl;
  }
 
+    std::thread saveObjThread(addObj , std::string(sValue_Name), std::string(sValue_SizeXYZ), std::string(sValue_Pose), sName_RGB, scene);
+    xercesc::XMLString::release(&sName_Name);
+    xercesc::XMLString::release(&sName_SizeXYZ);
+    xercesc::XMLString::release(&sName_RGB);
+    xercesc::XMLString::release(&sName_Pose);
+    saveObjThread.join();
+    xercesc::XMLString::release(&sValue_Name);
+    xercesc::XMLString::release(&sName_RGB);
+    xercesc::XMLString::release(&sValue_SizeXYZ);
+    xercesc::XMLString::release(&sValue_Pose);
 
-    std::shared_ptr<MobileObj> mobileObject = scene.findMobileObject(sValue_Name);
-    if(!mobileObject)
-    {
-        scene.addMobileObject(sValue_Name);
-        scene.addObjectSize(sValue_Name, sValue_SizeXYZ);
-        scene.addObjectPose(sValue_Name, sValue_Pose);
-        scene.addObjectColor(sValue_Name, sValue_RGB);
-    }
-
-    mobileObject = scene.findMobileObject(sValue_Name);
-    scene.GetObjs();
- xercesc::XMLString::release(&sName_Name);
- xercesc::XMLString::release(&sName_SizeXYZ);
- xercesc::XMLString::release(&sName_RGB);
- xercesc::XMLString::release(&sValue_Name);
- xercesc::XMLString::release(&sValue_SizeXYZ);
- xercesc::XMLString::release(&sValue_RGB);
 }
+
 
 
 
