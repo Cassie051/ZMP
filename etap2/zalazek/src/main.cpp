@@ -81,10 +81,11 @@ bool ExecPreprocesor( const char * NazwaPliku, std::istringstream &IStrm4Cmds )
 int main(int argc, char **argv)
 {
   //  if(!ReadCommands(argc, argv)) return 1;
-
+    std::string FileName = "../config/config.xml";
+    std::string GramarFileName = "../config/config.xsd";
     std::cout << "Current path is " << std::filesystem::current_path() << '\n';
     xercesc::DefaultHandler* pHandler = (xercesc::DefaultHandler*)(new XMLInterp4Config());
-    if(!ReadFile(argv[2], argv[3], pHandler)) return 1;
+    if(!ReadFile(FileName.c_str(), GramarFileName.c_str(), pHandler)) return 1;
     XMLInterp4Config* SceneHendler = (XMLInterp4Config*)(pHandler);
 
     Exec(*(SceneHendler->GetScene()));

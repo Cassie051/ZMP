@@ -1,4 +1,4 @@
-# Install script for directory: /home/nick/Dokumenty/ZMP/etap2/zalazek
+# Install script for directory: /home/kasia/Dokumenty/ZMP/etap2/zalazek
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/cmake_install.cmake")
+  include("/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/plugin/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nick/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kasia/Dokumenty/ZMP/etap2/zalazek/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

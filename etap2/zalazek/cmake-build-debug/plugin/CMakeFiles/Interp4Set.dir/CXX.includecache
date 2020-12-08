@@ -42,11 +42,11 @@ Interp4Command.hh
 AccessControl.hh
 ../plugin/inc/AccessControl.hh
 
-/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Set.cpp
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Set.cpp
 iostream
 -
 Interp4Set.hh
-/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Set.hh
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/Interp4Set.hh
 MobileObj.hh
-/home/nick/Dokumenty/ZMP/etap2/zalazek/plugin/src/MobileObj.hh
+/home/kasia/Dokumenty/ZMP/etap2/zalazek/plugin/src/MobileObj.hh
 
