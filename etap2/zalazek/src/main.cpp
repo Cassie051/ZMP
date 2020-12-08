@@ -26,18 +26,18 @@ bool ExecPreprocesor( const char * NazwaPliku, std::istringstream &IStrm4Cmds )
 }
 
 
-bool ReadCommands(int argc, char **argv)
+bool ReadCommands(Scene &scene)
 {
     std::istringstream IStrm4Cmds;
+    std::string FileName = "../config/test.cmd";
 
-    if(!ExecPreprocesor(argv[1], IStrm4Cmds))
+    if(!ExecPreprocesor(FileName.c_str(), IStrm4Cmds))
     {
         std::cerr << "Cannot process\n";
         return 2;
     }
 
     Set4LibInterfaces libInerfaces;
-    Scene scene;
     std::string libName, objectName;
 
     IStrm4Cmds >> libName;
@@ -114,12 +114,15 @@ bool ReadCommands(int argc, char **argv)
 
 int main(int argc, char **argv)
 {
-    if(!ReadCommands(argc, argv)) return 1;
+    std::string FileName = "../config/config.xml";
+    std::string GramarFileName = "../config/config.xsd";
 
     std::cout << "Current path is " << std::filesystem::current_path() << '\n';
     xercesc::DefaultHandler* pHandler = (xercesc::DefaultHandler*)(new XMLInterp4Config());
-    if(!ReadFile(argv[2], argv[3], pHandler)) return 1;
+    if(!ReadFile(FileName.c_str(), GramarFileName.c_str(), pHandler)) return 1;
     XMLInterp4Config* SceneHendler = (XMLInterp4Config*)(pHandler);
 
     Exec(*(SceneHendler->GetScene()));
+
+    if(!ReadCommands(*(SceneHendler->GetScene()))) return 1;
 }
