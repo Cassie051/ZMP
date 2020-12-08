@@ -2,6 +2,6 @@
 #define BACKGROUNDIMAGE_HH
 
 
-#define FILE_BACKGROUND_IMAGE "./space-stars2.png"
+#define FILE_BACKGROUND_IMAGE "./cat.jpg"
 
 #endif
