@@ -80,7 +80,7 @@ bool Interp4Pause::ReadParams(std::istream& Strm_CmdsList)
  */
 Interp4Command* Interp4Pause::CreateCmd()
 {
-  return new Interp4Pause();
+// return new Interp4Pause();
 }
 
 

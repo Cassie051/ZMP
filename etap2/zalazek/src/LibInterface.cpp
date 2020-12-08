@@ -30,7 +30,7 @@ bool LibInterface::initInterface(const std::string& CmdName)
     return true;
 }
 
-bool LibInterface::execActions(std::istream &rIstrm, std::shared_ptr<MobileObj>& mobileObject)
+bool LibInterface::execActions(std::istream &rIstrm, std::shared_ptr<MobileObj>& mobileObject, AccessControl  *pAccCtrl)
 {
     Interp4Command *pCmd = pCreateCmd();
 
@@ -39,6 +39,11 @@ bool LibInterface::execActions(std::istream &rIstrm, std::shared_ptr<MobileObj>&
     {
         return false;
     }
+
+//    if(!pCmd->ExecCmd((MobileObj *) &mobileObject, reinterpret_cast<AccessControl *>(&pAccCtrl)))
+//    {
+//        return false;
+//    }
 
     std::cout << mobileObject->GetName() << " ";
     pCmd->PrintCmd();

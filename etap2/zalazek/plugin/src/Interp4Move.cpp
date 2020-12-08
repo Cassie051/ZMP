@@ -81,7 +81,7 @@ bool Interp4Move::ReadParams(std::istream& Strm_CmdsList)
  */
 Interp4Command* Interp4Move::CreateCmd()
 {
-  return new Interp4Move();
+//  return new Interp4Move();
 }
 
 

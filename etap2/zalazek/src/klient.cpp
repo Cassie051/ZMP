@@ -48,8 +48,7 @@ bool ExecCmd(MobileObj *pObj, AccessControl  *pAccCtrl)
     bool Changed;
 
     while (true) {
-        pAccCtrl->LockAccess(); // Zamykamy dostęp do sceny, gdy wykonujemy
-        // modyfikacje na obiekcie.
+        pAccCtrl->LockAccess();
         if (!(Changed = pObj->IncStateIndex())) { pAccCtrl->UnlockAccess();  break; }
         pAccCtrl->MarkChange();
         pAccCtrl->UnlockAccess();
@@ -79,12 +78,8 @@ int Exec(Scene &Scn)
     }
     usleep(100000);
 
-    //-------------------------------------
-    // Należy pamiętać o zamknięciu połączenia.
-    // Bez tego serwer nie będzie reagował na
-    // nowe połączenia.
-    //
-    std::cout << "Close\n" << std::endl; // To tylko, aby pokazac wysylana instrukcje
+
+    std::cout << "Close\n" << std::endl;
     ClientSender.Send(Socket4Sending,"Close\n");
     ClientSender.CancelCountinueLooping();
     Thread4Sending.join();

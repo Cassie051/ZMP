@@ -12,7 +12,7 @@ private:
     Interp4Command *(*pCreateCmd)(void);
 public:
     LibInterface();
-    bool execActions(std::istream &rIstrm, std::shared_ptr<MobileObj>& mobileObject);
+    bool execActions(std::istream &rIstrm, std::shared_ptr<MobileObj>& mobileObject, AccessControl  *pAccCtrl);
     bool initInterface(const std::string& CmdName);
     ~LibInterface();
 };

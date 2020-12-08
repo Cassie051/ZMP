@@ -56,11 +56,9 @@ const char* Interp4Rotate::GetCmdName() const
 /*!
  *
  */
-bool Interp4Rotate::ExecCmd( MobileObj  *pMobObj,  int  Socket, AccessControl * AccCtrlPtr) const
+bool Interp4Rotate::ExecCmd( MobileObj  *pMobObj, AccessControl * AccCtrlPtr) const
 {
-  /*
-   *  Tu trzeba napisać odpowiedni kod.
-   */
+
     int timeToSleep = (int)(1000000 / std::abs(_angularVelocity));
     double targetOrientation  =pMobObj->GetAng_Yaw_deg() + _angularVelocity <0 ? -1 *_angle : _angle;
     bool exist = true;
@@ -94,10 +92,9 @@ bool Interp4Rotate::ExecCmd( MobileObj  *pMobObj,  int  Socket, AccessControl * 
  */
 bool Interp4Rotate::ReadParams(std::istream& Strm_CmdsList)
 {
-  /*
-   *  Tu trzeba napisać odpowiedni kod.
-   */
 
+    Strm_CmdsList >> _angularVelocity;
+    Strm_CmdsList >> _angle;
 
   return true;
 }

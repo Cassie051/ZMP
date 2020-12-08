@@ -80,7 +80,7 @@ bool Interp4Set::ReadParams(std::istream& Strm_CmdsList)
  */
 Interp4Command* Interp4Set::CreateCmd()
 {
-  return new Interp4Set();
+//  return new Interp4Set();
 }
 
 

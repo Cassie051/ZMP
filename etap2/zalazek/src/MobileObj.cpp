@@ -68,11 +68,11 @@ bool MobileObj::IncStateIndex() {return true;}
 
 void MobileObj::SetCmds()
 {
-    /*std::string AngRoll = std::to_string(_Ang_Roll_deg);
+    std::string AngRoll = std::to_string(_Ang_Roll_deg);
     std::string AngPitch = std::to_string(_Ang_Pitch_deg);
     std::string AngYaw = std::to_string(_Ang_Yaw_deg);
     std::string strposs = std::to_string(_Position_m[0])+" "+std::to_string(_Position_m[1])+" "+std::to_string(_Position_m[2]);
-    _Cmd4StatDesc = "Cube  " +GetSize() + "  " + strposs+ "  "+AngRoll+" "+AngPitch+" "+ AngYaw+"  "+GetColor()+"\n";*/
+    _Cmd4StatDesc = "Cube  " +GetSize() + "  " + strposs+ "  "+AngRoll+" "+AngPitch+" "+ AngYaw+"  "+GetColor()+"\n";
 
 }
 
@@ -83,21 +83,21 @@ void MobileObj::SetCmds(std::string newCmd)
 
 std::string MobileObj::GetCommand()
 {
-    /*Vector3D poss = GetPositoin_m();
-    std::string AngRoll = std::to_string(GetAng_Roll_deg()).substr(0, std::to_string(GetAng_Roll_deg()).find(".") + 2); //std::to_string(GetAng_Roll_deg());
-    std::string AngPitch = std::to_string(GetAng_Pitch_deg()).substr(0, std::to_string(GetAng_Pitch_deg()).find(".") + 2); //std::to_string(GetAng_Pitch_deg());
-    std::string AngYaw = std::to_string(GetAng_Yaw_deg()).substr(0, std::to_string(GetAng_Yaw_deg()).find(".") + 2);  //std::to_string(GetAng_Yaw_deg());
-    std::string strposs =
-            std::to_string(poss[0]).substr(0, std::to_string(poss[0]).find(".") + 2)+" "+
-            std::to_string(poss[1]).substr(0, std::to_string(poss[1]).find(".") + 2)+" "+
-            std::to_string(poss[2]).substr(0, std::to_string(poss[2]).find(".") + 2);
-    std::string sizes = GetSize();
-    std::string colours = GetColor();
-    std::string resuly = "Cube  " + GetSize() + "  " + strposs+ "  "+AngRoll+" "+AngPitch+" "+ AngYaw+ GetColor()+"\n";
-    return "Cube  " + GetSize() + "  " + strposs+ "  "+AngRoll+" "+AngPitch+" "+ AngYaw+ " "+ GetColor()+"\n";
-    //return "Cube  8.0 11.5 5.0  0.0 0.0 0.0  0.0 0.0 0.0 0 0 255\n";*/
+//    Vector3D poss = GetPositoin_m();
+//    std::string AngRoll = std::to_string(GetAng_Roll_deg()).substr(0, std::to_string(GetAng_Roll_deg()).find(".") + 2); //std::to_string(GetAng_Roll_deg());
+//    std::string AngPitch = std::to_string(GetAng_Pitch_deg()).substr(0, std::to_string(GetAng_Pitch_deg()).find(".") + 2); //std::to_string(GetAng_Pitch_deg());
+//    std::string AngYaw = std::to_string(GetAng_Yaw_deg()).substr(0, std::to_string(GetAng_Yaw_deg()).find(".") + 2);  //std::to_string(GetAng_Yaw_deg());
+//    std::string strposs =
+//            std::to_string(poss[0]).substr(0, std::to_string(poss[0]).find(".") + 2)+" "+
+//            std::to_string(poss[1]).substr(0, std::to_string(poss[1]).find(".") + 2)+" "+
+//            std::to_string(poss[2]).substr(0, std::to_string(poss[2]).find(".") + 2);
+//    std::string sizes = GetSize();
+//    std::string colours = GetColor();
+//    std::string resuly = "Cube  " + GetSize() + "  " + strposs+ "  "+AngRoll+" "+AngPitch+" "+ AngYaw+ GetColor()+"\n";
+//    return "Cube  " + GetSize() + "  " + strposs+ "  "+AngRoll+" "+AngPitch+" "+ AngYaw+ " "+ GetColor()+"\n";
+    //return "Cube  8.0 11.5 5.0  0.0 0.0 0.0  0.0 0.0 0.0 0 0 255\n";
 
-    std::string backcmd = _cmd;
-    return backcmd;
+//    std::string backcmd = _cmd;
+    return _cmd;
 
 }

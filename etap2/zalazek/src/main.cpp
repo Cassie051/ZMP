@@ -25,68 +25,83 @@ bool ExecPreprocesor( const char * NazwaPliku, std::istringstream &IStrm4Cmds )
     return pclose(pProc) == 0;
 }
 
-//
-//bool ReadCommands(int argc, char **argv)
-//{
-//    std::istringstream IStrm4Cmds;
-//
-//    if(!ExecPreprocesor(argv[1], IStrm4Cmds))
-//    {
-//        std::cerr << "Cannot process\n";
-//        return 2;
-//    }
-//
-//    Set4LibInterfaces libInerfaces;
-//    Scene scene;
-//    std::string libName, objectName;
-//
-//    IStrm4Cmds >> libName;
-//    IStrm4Cmds >> objectName;
-//
-//    while(!IStrm4Cmds.eof())
-//    {
-//        std::shared_ptr<MobileObj> mobileObject = scene.findMobileObject(objectName);
-//        if(!mobileObject)
-//        {
-//            scene.addMobileObject(objectName);
-//        }
-//        mobileObject = scene.findMobileObject(objectName);
-//
-//        std::shared_ptr<LibInterface> interface = libInerfaces.findInterface(libName);
-//        if(!interface)
-//        {
-//            bool addedLibSuccesfully = libInerfaces.addInterface(libName);
-//            if(!addedLibSuccesfully)
-//            {
-//                std::cerr << "Couldnt init lib: "  << libName << "\n";
-//                return 2;
-//            }
-//            interface = libInerfaces.findInterface(libName);
-//        }
-//        if(!interface->execActions(IStrm4Cmds, mobileObject))
-//        {
-//            std::cerr << "Couldnt execute action for: " << libName << "\n" ;
-//            return 2;
-//        }
-//
-//        IStrm4Cmds >> libName;
-//        IStrm4Cmds >> objectName;
-//    }
-//    return true;
-//}
-//
+
+bool ReadCommands(Scene &Scn)
+{
+    std::istringstream IStrm4Cmds;
+    std::string FileName = "../config/test.cmd";
+
+    if(!ExecPreprocesor(FileName.c_str(), IStrm4Cmds))
+    {
+        std::cerr << "Cannot process\n";
+        return 2;
+    }
+
+    Set4LibInterfaces libInerfaces;
+    std::string libName, objectName;
+
+    IStrm4Cmds >> libName;
+    IStrm4Cmds >> objectName;
+
+    if(libName == "Rotate")
+    {
+        libName = "libInterp4Rotate.so";
+    }
+    else if (libName == "Move")
+    {
+        libName = "libInterp4Move.so";
+    }
+    else if (libName == "Pause")
+    {
+        libName = "libInterp4Pause.so";
+    }
+
+    while(!IStrm4Cmds.eof())
+    {
+        std::shared_ptr<MobileObj> mobileObject = Scn.findMobileObject(objectName);
+        if(!mobileObject)
+        {
+            Scn.addMobileObject(objectName);
+        }
+        mobileObject = Scn.findMobileObject(objectName);
+
+        std::shared_ptr<LibInterface> interface = libInerfaces.findInterface(libName);
+        if(!interface)
+        {
+            bool addedLibSuccesfully = libInerfaces.addInterface(libName);
+            if(!addedLibSuccesfully)
+            {
+                std::cerr << "Couldnt init lib: "  << libName << "\n";
+                return 2;
+            }
+            interface = libInerfaces.findInterface(libName);
+        }
+        if(!interface->execActions(IStrm4Cmds, mobileObject, &Scn))
+        {
+            std::cerr << "Couldnt execute action for: " << libName << "\n" ;
+            return 2;
+        }
+
+
+
+        IStrm4Cmds >> libName;
+        IStrm4Cmds >> objectName;
+    }
+    return true;
+}
+
 
 
 
 int main(int argc, char **argv)
 {
-  //  if(!ReadCommands(argc, argv)) return 1;
     std::string FileName = "../config/config.xml";
     std::string GramarFileName = "../config/config.xsd";
     std::cout << "Current path is " << std::filesystem::current_path() << '\n';
     xercesc::DefaultHandler* pHandler = (xercesc::DefaultHandler*)(new XMLInterp4Config());
-    if(!ReadFile(FileName.c_str(), GramarFileName.c_str(), pHandler)) return 1;
     XMLInterp4Config* SceneHendler = (XMLInterp4Config*)(pHandler);
+    if(!ReadFile(FileName.c_str(), GramarFileName.c_str(), pHandler)) return 1;
 
     Exec(*(SceneHendler->GetScene()));
+    if(!ReadCommands(*(SceneHendler->GetScene()))) return 1;
 }
